@@ -1,0 +1,38 @@
+generated: '2026-07-21'
+method: searched
+source: >-
+  https://thenewstack.io/end-of-an-era-weaveworks-closes-shop-amid-cloud-native-turbulence/
+  + https://github.com/weaveworks
+status: company-defunct
+summary: >-
+  Weaveworks — the company that coined "GitOps" — ceased commercial operations in
+  February 2024 after an acquisition deal fell through. There is no live hosted
+  API, commercial product, or SLA. The company website (weave.works) has lapsed and
+  now redirects to a parked/spam page. The open-source projects were transitioned to
+  community / other stewards.
+events:
+  - date: '2024-02-05'
+    event: Weaveworks announced it was winding down operations.
+  - date: '2023-12-06'
+    event: Final stable release of the Weave GitOps OSS dashboard.
+transitions:
+  - project: Flux CD
+    to: CNCF (graduated project)
+    home: https://fluxcd.io
+  - project: eksctl
+    to: eksctl-io org, jointly maintained with AWS
+    home: https://eksctl.io
+  - project: Weave GitOps / docs
+    to: community-driven
+    home: https://docs.gitops.weaveworks.org
+  - project: Weave Net / Weave Scope / org repos
+    to: community-driven under github.com/weaveworks
+    home: https://github.com/weaveworks
+versioning:
+  scheme: none-active
+  note: No versioned hosted API. Individual OSS repos retain their own release tags.
+deprecation:
+  policy_url: null
+  note: Whole-company end-of-life; no formal per-API deprecation/Sunset-header policy exists.
+status_page: null
+sla: null

@@ -1,0 +1,42 @@
+generated: '2026-07-21'
+method: searched
+source: pkg.go.dev + GitHub weaveworks org
+note: >-
+  Weaveworks (the company) ceased operations in February 2024. It shipped no
+  hosted REST API / client SDKs; its first-party public software was open-source
+  infrastructure tooling written in Go. Weave Cloud (its SaaS, which had an API)
+  is shut down. The packages below are the surviving first-party open-source
+  distributables. eksctl was created by Weaveworks but is now jointly maintained
+  by AWS under the eksctl-io org.
+packages:
+  - language: go
+    registry: pkg.go.dev
+    name: github.com/weaveworks/weave
+    url: https://pkg.go.dev/github.com/weaveworks/weave
+    install: go get github.com/weaveworks/weave
+    official: true
+    description: Weave Net — multi-host container networking (CNI plugin, first Weaveworks product).
+  - language: go
+    registry: pkg.go.dev
+    name: github.com/weaveworks/scope
+    url: https://pkg.go.dev/github.com/weaveworks/scope
+    install: go get github.com/weaveworks/scope
+    official: true
+    description: Weave Scope — Docker/Kubernetes monitoring, visualization and management.
+  - language: go
+    registry: pkg.go.dev
+    name: github.com/weaveworks/common
+    url: https://pkg.go.dev/github.com/weaveworks/common
+    install: go get github.com/weaveworks/common
+    official: true
+    description: Shared Go libraries used across Weaveworks services.
+  - language: go
+    registry: pkg.go.dev
+    name: github.com/eksctl-io/eksctl
+    url: https://pkg.go.dev/github.com/eksctl-io/eksctl
+    install: brew install eksctl
+    official: false
+    description: >-
+      eksctl, the official CLI for Amazon EKS. Created at Weaveworks; ownership
+      transferred to the eksctl-io org and jointly maintained with AWS after the
+      Weaveworks shutdown. Homebrew tap moved weaveworks/tap -> eksctl-io/tap.

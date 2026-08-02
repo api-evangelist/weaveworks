@@ -1,8 +1,28 @@
 aid: weaveworks
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/weaveworks.png
 name: Weaveworks
-description: 'Weaveworks is a company surfaced as a portfolio company of accel, gv and added to the API
-  Evangelist network as a stub for enrichment. Sector: developer-tools. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Weaveworks was the cloud-native company that coined the term "GitOps" and built the Weave
+  family of open-source infrastructure tooling — Weave Net (multi-host container networking),
+  Weave Scope (Docker/Kubernetes visualization and monitoring), Weave GitOps, and the widely
+  used eksctl CLI for Amazon EKS. Backed by Accel and GV, the company ceased commercial
+  operations in February 2024 after a planned acquisition fell through. It shipped no hosted
+  REST API or client SDKs; its public surface was open-source Go tooling. Following the
+  shutdown, Flux CD moved to the CNCF (graduated), eksctl transferred to the eksctl-io org
+  jointly maintained with AWS, and the remaining Weave repositories became community-driven
+  under the github.com/weaveworks organization. The former company website (weave.works) has
+  lapsed and now redirects to a parked page.
 url: https://raw.githubusercontent.com/api-evangelist/weaveworks/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +33,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Developer Tools
+- GitOps
+- Kubernetes
+- Container Networking
+- Cloud Native
+- Open Source
+- DevOps
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +50,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/weaveworks-domain-security.yml
 - type: Website
   url: http://www.weave.works
+- type: GitHubOrganization
+  url: https://github.com/weaveworks
+- type: Documentation
+  url: https://docs.gitops.weaveworks.org
+- type: Packages
+  url: packages/weaveworks-packages.yml
+- type: CLI
+  url: cli/weaveworks-cli.yml
+- type: Lifecycle
+  url: lifecycle/weaveworks-lifecycle.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 5
+  pass: local-v1

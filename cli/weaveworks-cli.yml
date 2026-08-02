@@ -1,0 +1,50 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/weaveworks/weave + https://eksctl.io
+note: >-
+  Weaveworks shipped command-line tools rather than a hosted API. Two first-party
+  CLIs survive as open source. eksctl has since moved to the eksctl-io org and is
+  jointly maintained with AWS.
+clis:
+  - name: weave
+    binary: weave
+    repo: https://github.com/weaveworks/weave
+    install:
+      - "curl -L git.io/weave -o /usr/local/bin/weave && chmod a+x /usr/local/bin/weave"
+    description: Launch and manage the Weave Net container network.
+    commands:
+      - launch
+      - connect
+      - forget
+      - status
+      - expose
+      - hide
+      - dns-add
+      - dns-remove
+      - stop
+      - reset
+  - name: eksctl
+    binary: eksctl
+    repo: https://github.com/eksctl-io/eksctl
+    homepage: https://eksctl.io
+    official_owner: eksctl-io (jointly maintained with AWS; originated at Weaveworks)
+    install:
+      - "brew install eksctl"
+      - "curl -sLO https://github.com/eksctl-io/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz"
+    description: Create and manage Amazon EKS clusters from the command line.
+    verbs:
+      - create
+      - get
+      - delete
+      - upgrade
+      - scale
+      - update
+      - drain
+      - enable
+    resources:
+      - cluster
+      - nodegroup
+      - iamserviceaccount
+      - iamidentitymapping
+      - fargateprofile
+      - addon
