@@ -21,6 +21,8 @@ accessModel:
   source: []
   generated: '2026-07-22'
   method: derived
+  source:
+  - {url: 'http://www.weave.works', status: 302, note: 'declared website redirects to https://ambking1234.dev/?action=register&marketingRef=6788b227da9499f55f6ea745 — a different registrable domain (weave.works -> ambking1234.dev), possible rename or acquisition (probed 2026-09-03, roadmap#169)'}
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/weaveworks.png
 name: Weaveworks
 description: >-
