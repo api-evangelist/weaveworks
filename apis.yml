@@ -36,6 +36,12 @@ description: >-
   jointly maintained with AWS, and the remaining Weave repositories became community-driven
   under the github.com/weaveworks organization. The former company website (weave.works) has
   lapsed and now redirects to a parked page.
+x-status: defunct
+x-status-detail: >-
+  Website pointer removed 2026-10-03 (Kin's decision): weave.works no longer belongs to
+  Weaveworks. curl on 2026-10-03 shows http://www.weave.works -> https://weave.works -> a 164-byte
+  JavaScript bounce to https://ambking1234.dev/?action=register&marketingRef=..., an unrelated
+  domain's affiliate registration page (the target answers 403 to our probes). Do not re-add it.
 url: https://raw.githubusercontent.com/api-evangelist/weaveworks/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -54,8 +60,9 @@ tags:
 - Kubernetes
 - Container Networking
 - Cloud-Native
-- Open-Source
+- Open Source
 - DevOps
+- Defunct
 tags_raw:
 - Company
 - Developer Tools
@@ -65,6 +72,8 @@ tags_raw:
 - Cloud Native
 - Open Source
 - DevOps
+- Open-Source
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -74,8 +83,6 @@ maintainers:
 common:
 - type: DomainSecurity
   url: security/weaveworks-domain-security.yml
-- type: Website
-  url: http://www.weave.works
 - type: GitHubOrganization
   url: https://github.com/weaveworks
 - type: Documentation
