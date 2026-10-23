@@ -1,5 +1,5 @@
 edges:
-- partner_name: OpenSSF Best Practices Badge
+- partner_name: OpenSSF Best Practices Badge (bestpractices.dev)
   partner: null
   partner_match: register
   type: register
@@ -7,33 +7,34 @@ edges:
   relationship: standard-participant
   direction: partner-built
   evidence: https://www.bestpractices.dev/en/projects/7761
-  category: OpenSSF Best Practices badge (open-source project security conformance)
+  category: OpenSSF Best Practices badge (open-source project security practices)
   contract_reference:
-    register: OpenSSF Best Practices badge projects (bestpractices.dev/en/projects.json, paged)
-    standard: OpenSSF Best Practices Badge criteria (formerly CII Best Practices; bestpractices.dev)
+    register: OpenSSF Best Practices Badge projects (www.bestpractices.dev/en/projects.json)
+    standard: OpenSSF Best Practices Badge criteria (passing / silver / gold)
     spec_file: null
-    role: badge-holder
+    role: badged-project-owner
     registered_name: tf-controller
+    matched_domain: null
     matched_by: github-org+name-among-claimants
-    matched_on: weaveworks
     certified_products:
     - product: open-source project
       product_type: open-source project
-      standard: OpenSSF Best Practices Badge criteria (formerly CII Best Practices; bestpractices.dev)
-      lapsed: false
+      standard: OpenSSF Best Practices Badge criteria (passing / silver / gold)
       partner_tier: passing
-      projects:
-      - name: tf-controller
-        id: 7761
-        url: https://www.bestpractices.dev/en/projects/7761
-        badge_level: passing
-      - name: weave-gitops
-        id: 7820
-        url: https://www.bestpractices.dev/en/projects/7820
-        badge_level: passing
-    signal_note: 'certified_products = ONE entry (product type: open-source project) with the highest CURRENT badge
-      level in partner_tier; a provider whose projects only lost the badge is lapsed: true; project names are context,
-      never counted; in_progress entries are not conformance'
+      lapsed: false
+      badge_date: '2023-09-14'
+    badged_projects:
+    - name: tf-controller
+      id: 7761
+      badge: passing
+      url: https://www.bestpractices.dev/en/projects/7761
+    - name: weave-gitops
+      id: 7820
+      badge: passing
+      url: https://www.bestpractices.dev/en/projects/7820
+    signal_note: 'certified_products = ONE entry per provider (product type open-source project): highest current
+      OpenSSF Best Practices badge level in partner_tier, earliest date at that level; lapsed: true when every linked
+      project lost its badge. badged_projects is context, never counted'
     detected_by: sweep-openssf-best-practices-badges.py
     detected: '2026-10-22'
   detected_by: sweep-openssf-best-practices-badges.py
@@ -44,3 +45,4 @@ source:
 - https://www.bestpractices.dev/en/projects.json
 checked:
 - https://www.bestpractices.dev/en/projects.json
+- https://www.bestpractices.dev/en/projects.json?page=N
