@@ -64,6 +64,45 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Weaveworks is a company surfaced as a portfolio company of accel, gv and added to the API Evangelist network as a stub for enrichment. Sector: developer-tools. This profile is a lead awaiting the enrichment pipeline.
+> **No longer operating.** This company or product has shut down, been discontinued, or been deprecated. This profile is kept as a historical record and is not maintained or rated.
 
-Backed by: accel, gv — http://www.weave.works
+Weaveworks was the cloud-native company that coined the term "GitOps" and built the Weave family of open-source infrastructure tooling — Weave Net (multi-host container networking), Weave Scope (Docker/Kubernetes visualization and monitoring), Weave GitOps, and the widely used eksctl CLI for Amazon EKS. Backed by Accel and GV, the company ceased commercial operations in February 2024 after a planned acquisition fell through. It shipped no hosted REST API or client SDKs; its public surface was open-source Go tooling. Following the shutdown, Flux CD moved to the CNCF (graduated), eksctl transferred to the eksctl-io org jointly maintained with AWS, and the remaining Weave repositories became community-driven under the github.com/weaveworks organization. The former company website (weave.works) has lapsed and now redirects to a parked page.
+
+**Areas:** Company · Developer Tools · GitOps · Kubernetes · Container Networking · Cloud-Native · Open Source · DevOps · Defunct
+
+## Weaveworks on APIs.io (historical record)
+
+Everything profiled for Weaveworks is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/weaveworks/](https://apis.io/providers/weaveworks/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Weaveworks Domain Security](https://apis.io/security/weaveworks/weaveworks-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Documentation](https://docs.gitops.weaveworks.org)
+- [GitHub](https://github.com/weaveworks)
+
+## API Evangelist rating
+
+**Not rated** — this company is recorded as no longer operating, so no score is published. If it is in fact operating, say so on this repository and it will be re-profiled.
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Weaveworks: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/weaveworks/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
